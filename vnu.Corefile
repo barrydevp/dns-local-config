@@ -1,0 +1,10 @@
+. {
+    log
+
+}
+
+vnu.k63 {
+    file db.vnu.k63 vnu.k63.
+    log
+}
+

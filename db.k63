@@ -1,0 +1,28 @@
+$TTL 1D
+@	IN SOA dns.k63. root.k63. (
+                                20211104 ; serial
+                                7200       ; refresh (2 hours)
+                                3600       ; retry (1 hour)
+                                1209600    ; expire (2 weeks)
+                                3600       ; minimum (1 hour)
+                                )
+
+
+
+
+
+	IN NS	dns.k63.
+	IN A	192.168.72.131
+
+; name server
+vnu	IN NS	dns.vnu.k63.
+
+; name server
+dns	IN A	192.168.72.131
+dns.vnu.k63.	IN A	192.168.72.150
+
+; host server
+www.web	IN CNAME	web.k63.
+web	IN A	0.0.0.1
+mail	IN A	0.0.0.2
+

@@ -1,0 +1,28 @@
+$ORIGIN vnu.k63.
+@       3600 IN SOA dns.vnu.k63. root.vnu.k63. (
+                                20211304 ; serial
+                                7200       ; refresh (2 hours)
+                                3600       ; retry (1 hour)
+                                1209600    ; expire (2 weeks)
+                                3600       ; minimum (1 hour)
+                                )
+
+        IN NS   dns.vnu.k63.
+        IN A	192.168.72.150
+
+
+; NS record
+uet	IN NS	dns.uet.vnu.k63.
+ulis	IN NS	dns.ulis.vnu.k63.
+
+; nameserver
+dns	IN A	192.168.72.150
+dns.uet.vnu.k63.	IN A	192.168.72.160
+dns.ulis.vnu.k63.	IN A	192.168.72.170
+
+; host
+www	IN CNAME	vnu.k63.
+mail	IN A	1.1.0.2
+dangkyhoc	IN A	1.1.0.3
+daotao	IN A	1.1.0.4
+
